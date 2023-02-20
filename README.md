@@ -16,12 +16,12 @@ pip install openai deepgram-sdk python-dotenv pydub requests gTTS
 
 3. Start the assistant:
 ```bash
-python driver_assistant.py
+python assistant_driver.py
 ```
 
 ## Modifying Text-to-Speech
 Google Text-to-Speech (gTTS) does not have as high-quality voices as ElevenLab, but it is free, faster, and can run locally.
-You can modify [`driver_assistant.py`](/driver_assistant.py) to import the `text_to_speech` method from [`text_to_speech/simple.py`](/text_to_speech/simple.py) instead of [`text_to_speech/eleven.py`](/text_to_speech/eleven.py). For example:
+You can modify [`assistant_driver.py`](/assistant_driver.py#L2) to import the `text_to_speech` method from [`text_to_speech/simple.py`](/text_to_speech/simple.py) instead of [`text_to_speech/eleven.py`](/text_to_speech/eleven.py). For example:
 ```python
 # from text_to_speech.eleven import text_to_speech
 from text_to_speech.simple import text_to_speech
