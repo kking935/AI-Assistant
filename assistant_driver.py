@@ -1,10 +1,11 @@
 # Import custom modules
-from text_to_speech.elevens import text_to_speech
+from text_to_speech.elevenlabs import text_to_speech
+# from text_to_speech.google import text_to_speech
 from text_to_text.gpt import text_to_text
 from speech_to_text.deepg import speech_to_text
 
 # Initial AI introduction
-AI_INTRODUCTION = 'Hi friend! My name is Sam and I am an AI created by Open AI, with help from Deepgram, Elevens Lab, and Ken King. Is there anything I can help you with today? Feel free to ask away!'
+AI_INTRODUCTION = 'Hi friend! My name is Sam and I am an AI created by Open AI, with help from Deepgram, Eleven Labs, and Ken King. Is there anything I can help you with today? Feel free to ask away!'
 # Initial prompt
 INITIAL_PROMPT = f"The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nAI: {AI_INTRODUCTION}\n"
 

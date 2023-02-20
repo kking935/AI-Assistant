@@ -8,14 +8,14 @@ from pydub.playback import play
 
 # -----------------------------------------------
 
-# Load the Elevens Lab API key from the .env file
+# Load the Eleven Lab API key from the .env file
 import os
 from dotenv import load_dotenv
 load_dotenv()
-ELEVENS_API_KEY = os.environ.get("ELEVENS_API_KEY")
+ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 
-# Load the Elevens voice ID from the .env file
-VOICE_ID = os.environ.get("ELEVENS_VOICE_ID")
+# Load the Eleven Lab voice ID from the .env file
+VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID")
 
 # Import requests to make HTTP requests
 import requests
@@ -32,7 +32,7 @@ data = {
 
 headers = {
     "Content-Type": "application/json",
-    "xi-api-key": ELEVENS_API_KEY
+    "xi-api-key": ELEVENLABS_API_KEY
 }
 
 def text_to_speech(text):

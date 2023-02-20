@@ -18,7 +18,7 @@ from pydub.playback import play
 
 # -----------------------------------------------
 
-# Import the text to speech library
+# Import the Google text to speech library
 from gtts import gTTS
 
 def text_to_speech(text):
