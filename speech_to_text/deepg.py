@@ -16,4 +16,4 @@ def speech_to_text(audio_path, audio_mimetype):
         transcript = response['results']['channels'][0]['alternatives'][0]['transcript']
     return transcript.strip()
 
-# print(speech_to_text('example.mp3', 'audio/mp3'))
+print(speech_to_text('example.mp3', 'audio/mp3'))
